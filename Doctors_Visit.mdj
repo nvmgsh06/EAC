@@ -1,0 +1,1128 @@
+{
+  "_type": "Project",
+  "_id": "P1",
+  "name": "Doctors Visit",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "M1",
+      "_parent": {
+        "$ref": "P1"
+      },
+      "name": "Doctor's Visit",
+      "ownedElements": [
+        {
+          "_type": "UMLCollaboration",
+          "_id": "C1",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Doctor's Visit",
+          "ownedElements": [
+            {
+              "_type": "UMLInteraction",
+              "_id": "I1",
+              "_parent": {
+                "$ref": "C1"
+              },
+              "name": "Sequence Diagram of Doctor's Visit",
+              "ownedElements": [
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "LL1",
+                  "_parent": {
+                    "$ref": "I1"
+                  },
+                  "name": "Doctor"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "LL2",
+                  "_parent": {
+                    "$ref": "I1"
+                  },
+                  "name": ": Hospital System"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "LL3",
+                  "_parent": {
+                    "$ref": "I1"
+                  },
+                  "name": "Patient"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "MSG1",
+                  "_parent": {
+                    "$ref": "I1"
+                  },
+                  "name": "Check Schedule",
+                  "source": {
+                    "$ref": "LL1"
+                  },
+                  "target": {
+                    "$ref": "LL2"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "MSG2",
+                  "_parent": {
+                    "$ref": "I1"
+                  },
+                  "name": "Patient Visit Planned",
+                  "source": {
+                    "$ref": "LL2"
+                  },
+                  "target": {
+                    "$ref": "LL1"
+                  },
+                  "messageSort": "reply"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "MSG3",
+                  "_parent": {
+                    "$ref": "I1"
+                  },
+                  "name": "Confirm Visit",
+                  "source": {
+                    "$ref": "LL1"
+                  },
+                  "target": {
+                    "$ref": "LL2"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "MSG4",
+                  "_parent": {
+                    "$ref": "I1"
+                  },
+                  "name": "Check Patient Condition",
+                  "source": {
+                    "$ref": "LL1"
+                  },
+                  "target": {
+                    "$ref": "LL3"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "MSG5",
+                  "_parent": {
+                    "$ref": "I1"
+                  },
+                  "name": "Report Patient Condition",
+                  "source": {
+                    "$ref": "LL1"
+                  },
+                  "target": {
+                    "$ref": "LL2"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLNote",
+                  "_id": "TITLE",
+                  "_parent": {
+                    "$ref": "I1"
+                  },
+                  "name": "Sequence Diagram of Doctor's Visit"
+                },
+                {
+                  "_type": "UMLSequenceDiagram",
+                  "_id": "D1",
+                  "_parent": {
+                    "$ref": "I1"
+                  },
+                  "name": "Sequence Diagram of Doctor's Visit",
+                  "ownedViews": [
+                    {
+                      "_type": "UMLSeqLifelineView",
+                      "_id": "VLL1",
+                      "_parent": {
+                        "$ref": "D1"
+                      },
+                      "model": {
+                        "$ref": "LL1"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "VLL1N",
+                          "_parent": {
+                            "$ref": "VLL1"
+                          },
+                          "model": {
+                            "$ref": "LL1"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL1L1",
+                              "_parent": {
+                                "$ref": "VLL1N"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 100,
+                              "top": 125,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL1L2",
+                              "_parent": {
+                                "$ref": "VLL1N"
+                              },
+                              "font": "Arial;13;1",
+                              "parentStyle": true,
+                              "left": 105,
+                              "top": 140,
+                              "width": 80,
+                              "height": 30,
+                              "text": "Doctor",
+                              "horizontalAlignment": 1
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL1L3",
+                              "_parent": {
+                                "$ref": "VLL1N"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 100,
+                              "top": 120,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL1L4",
+                              "_parent": {
+                                "$ref": "VLL1N"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 100,
+                              "top": 120,
+                              "height": 13
+                            }
+                          ],
+                          "font": "Arial;13;0",
+                          "parentStyle": true,
+                          "left": 55,
+                          "top": 120,
+                          "width": 90,
+                          "height": 45,
+                          "stereotypeLabel": {
+                            "$ref": "VLL1L1"
+                          },
+                          "nameLabel": {
+                            "$ref": "VLL1L2"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "VLL1L3"
+                          },
+                          "propertyLabel": {
+                            "$ref": "VLL1L4"
+                          }
+                        },
+                        {
+                          "_type": "UMLLinePartView",
+                          "_id": "VLL1P",
+                          "_parent": {
+                            "$ref": "VLL1"
+                          },
+                          "model": {
+                            "$ref": "LL1"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 105,
+                          "top": 166,
+                          "width": 1,
+                          "height": 634
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "parentStyle": false,
+                      "left": 55,
+                      "top": 120,
+                      "width": 90,
+                      "height": 680,
+                      "nameCompartment": {
+                        "$ref": "VLL1N"
+                      },
+                      "linePart": {
+                        "$ref": "VLL1P"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqLifelineView",
+                      "_id": "VLL2",
+                      "_parent": {
+                        "$ref": "D1"
+                      },
+                      "model": {
+                        "$ref": "LL2"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "VLL2N",
+                          "_parent": {
+                            "$ref": "VLL2"
+                          },
+                          "model": {
+                            "$ref": "LL2"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL2L1",
+                              "_parent": {
+                                "$ref": "VLL2N"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 455,
+                              "top": 70,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL2L2",
+                              "_parent": {
+                                "$ref": "VLL2N"
+                              },
+                              "font": "Arial;13;1",
+                              "parentStyle": true,
+                              "left": 460,
+                              "top": 85,
+                              "width": 120,
+                              "height": 30,
+                              "text": ": Hospital\nSystem",
+                              "horizontalAlignment": 1
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL2L3",
+                              "_parent": {
+                                "$ref": "VLL2N"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 455,
+                              "top": 65,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL2L4",
+                              "_parent": {
+                                "$ref": "VLL2N"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 455,
+                              "top": 65,
+                              "height": 13
+                            }
+                          ],
+                          "font": "Arial;13;0",
+                          "parentStyle": true,
+                          "left": 410,
+                          "top": 65,
+                          "width": 130,
+                          "height": 45,
+                          "stereotypeLabel": {
+                            "$ref": "VLL2L1"
+                          },
+                          "nameLabel": {
+                            "$ref": "VLL2L2"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "VLL2L3"
+                          },
+                          "propertyLabel": {
+                            "$ref": "VLL2L4"
+                          }
+                        },
+                        {
+                          "_type": "UMLLinePartView",
+                          "_id": "VLL2P",
+                          "_parent": {
+                            "$ref": "VLL2"
+                          },
+                          "model": {
+                            "$ref": "LL2"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 460,
+                          "top": 111,
+                          "width": 1,
+                          "height": 689
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "parentStyle": false,
+                      "left": 410,
+                      "top": 65,
+                      "width": 130,
+                      "height": 735,
+                      "nameCompartment": {
+                        "$ref": "VLL2N"
+                      },
+                      "linePart": {
+                        "$ref": "VLL2P"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqLifelineView",
+                      "_id": "VLL3",
+                      "_parent": {
+                        "$ref": "D1"
+                      },
+                      "model": {
+                        "$ref": "LL3"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "VLL3N",
+                          "_parent": {
+                            "$ref": "VLL3"
+                          },
+                          "model": {
+                            "$ref": "LL3"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL3L1",
+                              "_parent": {
+                                "$ref": "VLL3N"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 835,
+                              "top": 120,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL3L2",
+                              "_parent": {
+                                "$ref": "VLL3N"
+                              },
+                              "font": "Arial;13;1",
+                              "parentStyle": true,
+                              "left": 840,
+                              "top": 135,
+                              "width": 80,
+                              "height": 30,
+                              "text": "Patient",
+                              "horizontalAlignment": 1
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL3L3",
+                              "_parent": {
+                                "$ref": "VLL3N"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 835,
+                              "top": 115,
+                              "height": 13
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "VLL3L4",
+                              "_parent": {
+                                "$ref": "VLL3N"
+                              },
+                              "visible": false,
+                              "font": "Arial;13;0",
+                              "parentStyle": true,
+                              "left": 835,
+                              "top": 115,
+                              "height": 13
+                            }
+                          ],
+                          "font": "Arial;13;0",
+                          "parentStyle": true,
+                          "left": 790,
+                          "top": 115,
+                          "width": 90,
+                          "height": 45,
+                          "stereotypeLabel": {
+                            "$ref": "VLL3L1"
+                          },
+                          "nameLabel": {
+                            "$ref": "VLL3L2"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "VLL3L3"
+                          },
+                          "propertyLabel": {
+                            "$ref": "VLL3L4"
+                          }
+                        },
+                        {
+                          "_type": "UMLLinePartView",
+                          "_id": "VLL3P",
+                          "_parent": {
+                            "$ref": "VLL3"
+                          },
+                          "model": {
+                            "$ref": "LL3"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 840,
+                          "top": 161,
+                          "width": 1,
+                          "height": 639
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "parentStyle": false,
+                      "left": 790,
+                      "top": 115,
+                      "width": 90,
+                      "height": 685,
+                      "nameCompartment": {
+                        "$ref": "VLL3N"
+                      },
+                      "linePart": {
+                        "$ref": "VLL3P"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "VMSG1",
+                      "_parent": {
+                        "$ref": "D1"
+                      },
+                      "model": {
+                        "$ref": "MSG1"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG1L",
+                          "_parent": {
+                            "$ref": "VMSG1"
+                          },
+                          "model": {
+                            "$ref": "MSG1"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 202.5,
+                          "top": 200,
+                          "width": 110,
+                          "height": 18,
+                          "alpha": -1.5707963267948966,
+                          "distance": 14,
+                          "hostEdge": {
+                            "$ref": "VMSG1"
+                          },
+                          "edgePosition": 1,
+                          "text": "Check Schedule"
+                        },
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG1S",
+                          "_parent": {
+                            "$ref": "VMSG1"
+                          },
+                          "model": {
+                            "$ref": "MSG1"
+                          },
+                          "visible": false,
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 100,
+                          "top": 195,
+                          "height": 13,
+                          "alpha": 1.5707963267948966,
+                          "distance": 25,
+                          "hostEdge": {
+                            "$ref": "VMSG1"
+                          },
+                          "edgePosition": 1
+                        },
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG1P",
+                          "_parent": {
+                            "$ref": "VMSG1"
+                          },
+                          "model": {
+                            "$ref": "MSG1"
+                          },
+                          "visible": false,
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 100,
+                          "top": 195,
+                          "height": 13,
+                          "alpha": -1.5707963267948966,
+                          "distance": 10,
+                          "hostEdge": {
+                            "$ref": "VMSG1"
+                          },
+                          "edgePosition": 1
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "VMSG1A",
+                          "_parent": {
+                            "$ref": "VMSG1"
+                          },
+                          "model": {
+                            "$ref": "MSG1"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 448,
+                          "top": 195,
+                          "width": 14,
+                          "height": 65
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "parentStyle": false,
+                      "tail": {
+                        "$ref": "VLL1"
+                      },
+                      "head": {
+                        "$ref": "VLL2"
+                      },
+                      "points": "100:195;455:195",
+                      "nameLabel": {
+                        "$ref": "VMSG1L"
+                      },
+                      "stereotypeLabel": {
+                        "$ref": "VMSG1S"
+                      },
+                      "propertyLabel": {
+                        "$ref": "VMSG1P"
+                      },
+                      "activation": {
+                        "$ref": "VMSG1A"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "VMSG2",
+                      "_parent": {
+                        "$ref": "D1"
+                      },
+                      "model": {
+                        "$ref": "MSG2"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG2L",
+                          "_parent": {
+                            "$ref": "VMSG2"
+                          },
+                          "model": {
+                            "$ref": "MSG2"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 202.5,
+                          "top": 280,
+                          "width": 147,
+                          "height": 18,
+                          "alpha": -1.5707963267948966,
+                          "distance": 14,
+                          "hostEdge": {
+                            "$ref": "VMSG2"
+                          },
+                          "edgePosition": 1,
+                          "text": "Patient Visit Planned"
+                        },
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG2S",
+                          "_parent": {
+                            "$ref": "VMSG2"
+                          },
+                          "model": {
+                            "$ref": "MSG2"
+                          },
+                          "visible": false,
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 455,
+                          "top": 275,
+                          "height": 13,
+                          "alpha": 1.5707963267948966,
+                          "distance": 25,
+                          "hostEdge": {
+                            "$ref": "VMSG2"
+                          },
+                          "edgePosition": 1
+                        },
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG2P",
+                          "_parent": {
+                            "$ref": "VMSG2"
+                          },
+                          "model": {
+                            "$ref": "MSG2"
+                          },
+                          "visible": false,
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 455,
+                          "top": 275,
+                          "height": 13,
+                          "alpha": -1.5707963267948966,
+                          "distance": 10,
+                          "hostEdge": {
+                            "$ref": "VMSG2"
+                          },
+                          "edgePosition": 1
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "parentStyle": false,
+                      "tail": {
+                        "$ref": "VLL2"
+                      },
+                      "head": {
+                        "$ref": "VLL1"
+                      },
+                      "points": "455:275;100:275",
+                      "nameLabel": {
+                        "$ref": "VMSG2L"
+                      },
+                      "stereotypeLabel": {
+                        "$ref": "VMSG2S"
+                      },
+                      "propertyLabel": {
+                        "$ref": "VMSG2P"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "VMSG3",
+                      "_parent": {
+                        "$ref": "D1"
+                      },
+                      "model": {
+                        "$ref": "MSG3"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG3L",
+                          "_parent": {
+                            "$ref": "VMSG3"
+                          },
+                          "model": {
+                            "$ref": "MSG3"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 202.5,
+                          "top": 360,
+                          "width": 110,
+                          "height": 18,
+                          "alpha": -1.5707963267948966,
+                          "distance": 14,
+                          "hostEdge": {
+                            "$ref": "VMSG3"
+                          },
+                          "edgePosition": 1,
+                          "text": "Confirm Visit"
+                        },
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG3S",
+                          "_parent": {
+                            "$ref": "VMSG3"
+                          },
+                          "model": {
+                            "$ref": "MSG3"
+                          },
+                          "visible": false,
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 100,
+                          "top": 355,
+                          "height": 13,
+                          "alpha": 1.5707963267948966,
+                          "distance": 25,
+                          "hostEdge": {
+                            "$ref": "VMSG3"
+                          },
+                          "edgePosition": 1
+                        },
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG3P",
+                          "_parent": {
+                            "$ref": "VMSG3"
+                          },
+                          "model": {
+                            "$ref": "MSG3"
+                          },
+                          "visible": false,
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 100,
+                          "top": 355,
+                          "height": 13,
+                          "alpha": -1.5707963267948966,
+                          "distance": 10,
+                          "hostEdge": {
+                            "$ref": "VMSG3"
+                          },
+                          "edgePosition": 1
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "VMSG3A",
+                          "_parent": {
+                            "$ref": "VMSG3"
+                          },
+                          "model": {
+                            "$ref": "MSG3"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 448,
+                          "top": 355,
+                          "width": 14,
+                          "height": 65
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "parentStyle": false,
+                      "tail": {
+                        "$ref": "VLL1"
+                      },
+                      "head": {
+                        "$ref": "VLL2"
+                      },
+                      "points": "100:355;455:355",
+                      "nameLabel": {
+                        "$ref": "VMSG3L"
+                      },
+                      "stereotypeLabel": {
+                        "$ref": "VMSG3S"
+                      },
+                      "propertyLabel": {
+                        "$ref": "VMSG3P"
+                      },
+                      "activation": {
+                        "$ref": "VMSG3A"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "VMSG4",
+                      "_parent": {
+                        "$ref": "D1"
+                      },
+                      "model": {
+                        "$ref": "MSG4"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG4L",
+                          "_parent": {
+                            "$ref": "VMSG4"
+                          },
+                          "model": {
+                            "$ref": "MSG4"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 392.5,
+                          "top": 520,
+                          "width": 161,
+                          "height": 18,
+                          "alpha": -1.5707963267948966,
+                          "distance": 14,
+                          "hostEdge": {
+                            "$ref": "VMSG4"
+                          },
+                          "edgePosition": 1,
+                          "text": "Check Patient Condition"
+                        },
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG4S",
+                          "_parent": {
+                            "$ref": "VMSG4"
+                          },
+                          "model": {
+                            "$ref": "MSG4"
+                          },
+                          "visible": false,
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 100,
+                          "top": 515,
+                          "height": 13,
+                          "alpha": 1.5707963267948966,
+                          "distance": 25,
+                          "hostEdge": {
+                            "$ref": "VMSG4"
+                          },
+                          "edgePosition": 1
+                        },
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG4P",
+                          "_parent": {
+                            "$ref": "VMSG4"
+                          },
+                          "model": {
+                            "$ref": "MSG4"
+                          },
+                          "visible": false,
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 100,
+                          "top": 515,
+                          "height": 13,
+                          "alpha": -1.5707963267948966,
+                          "distance": 10,
+                          "hostEdge": {
+                            "$ref": "VMSG4"
+                          },
+                          "edgePosition": 1
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "VMSG4A",
+                          "_parent": {
+                            "$ref": "VMSG4"
+                          },
+                          "model": {
+                            "$ref": "MSG4"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 828,
+                          "top": 515,
+                          "width": 14,
+                          "height": 65
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "parentStyle": false,
+                      "tail": {
+                        "$ref": "VLL1"
+                      },
+                      "head": {
+                        "$ref": "VLL3"
+                      },
+                      "points": "100:515;835:515",
+                      "nameLabel": {
+                        "$ref": "VMSG4L"
+                      },
+                      "stereotypeLabel": {
+                        "$ref": "VMSG4S"
+                      },
+                      "propertyLabel": {
+                        "$ref": "VMSG4P"
+                      },
+                      "activation": {
+                        "$ref": "VMSG4A"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "VMSG5",
+                      "_parent": {
+                        "$ref": "D1"
+                      },
+                      "model": {
+                        "$ref": "MSG5"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG5L",
+                          "_parent": {
+                            "$ref": "VMSG5"
+                          },
+                          "model": {
+                            "$ref": "MSG5"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 202.5,
+                          "top": 600,
+                          "width": 168,
+                          "height": 18,
+                          "alpha": -1.5707963267948966,
+                          "distance": 14,
+                          "hostEdge": {
+                            "$ref": "VMSG5"
+                          },
+                          "edgePosition": 1,
+                          "text": "Report Patient Condition"
+                        },
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG5S",
+                          "_parent": {
+                            "$ref": "VMSG5"
+                          },
+                          "model": {
+                            "$ref": "MSG5"
+                          },
+                          "visible": false,
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 100,
+                          "top": 595,
+                          "height": 13,
+                          "alpha": 1.5707963267948966,
+                          "distance": 25,
+                          "hostEdge": {
+                            "$ref": "VMSG5"
+                          },
+                          "edgePosition": 1
+                        },
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "VMSG5P",
+                          "_parent": {
+                            "$ref": "VMSG5"
+                          },
+                          "model": {
+                            "$ref": "MSG5"
+                          },
+                          "visible": false,
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 100,
+                          "top": 595,
+                          "height": 13,
+                          "alpha": -1.5707963267948966,
+                          "distance": 10,
+                          "hostEdge": {
+                            "$ref": "VMSG5"
+                          },
+                          "edgePosition": 1
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "VMSG5A",
+                          "_parent": {
+                            "$ref": "VMSG5"
+                          },
+                          "model": {
+                            "$ref": "MSG5"
+                          },
+                          "font": "Arial;13;0",
+                          "parentStyle": false,
+                          "left": 448,
+                          "top": 595,
+                          "width": 14,
+                          "height": 65
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "parentStyle": false,
+                      "tail": {
+                        "$ref": "VLL1"
+                      },
+                      "head": {
+                        "$ref": "VLL2"
+                      },
+                      "points": "100:595;455:595",
+                      "nameLabel": {
+                        "$ref": "VMSG5L"
+                      },
+                      "stereotypeLabel": {
+                        "$ref": "VMSG5S"
+                      },
+                      "propertyLabel": {
+                        "$ref": "VMSG5P"
+                      },
+                      "activation": {
+                        "$ref": "VMSG5A"
+                      }
+                    },
+                    {
+                      "_type": "UMLNoteView",
+                      "_id": "TITLEV",
+                      "_parent": {
+                        "$ref": "D1"
+                      },
+                      "model": {
+                        "$ref": "TITLE"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "LabelView",
+                          "_id": "TITLEL",
+                          "_parent": {
+                            "$ref": "TITLEV"
+                          },
+                          "model": {
+                            "$ref": "TITLE"
+                          },
+                          "font": "Arial;18;1",
+                          "parentStyle": false,
+                          "left": 155,
+                          "top": 18,
+                          "width": 530,
+                          "height": 28,
+                          "text": "Sequence Diagram of Doctor's Visit",
+                          "horizontalAlignment": 1
+                        }
+                      ],
+                      "font": "Arial;13;0",
+                      "parentStyle": false,
+                      "left": 155,
+                      "top": 8,
+                      "width": 530,
+                      "height": 50,
+                      "fillColor": "#ffff00",
+                      "lineColor": "#ffff00",
+                      "nameLabel": {
+                        "$ref": "TITLEL"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

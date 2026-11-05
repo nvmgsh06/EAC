@@ -1,0 +1,959 @@
+{
+  "_type": "Project",
+  "_id": "P1",
+  "name": "Activity Diagram Discharge",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "M1",
+      "_parent": {
+        "$ref": "P1"
+      },
+      "name": "Hospital Discharge",
+      "ownedElements": [
+        {
+          "_type": "UMLActivity",
+          "_id": "ACT1",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Discharge",
+          "ownedElements": [
+            {
+              "_type": "UMLActivityPartition",
+              "_id": "PATIENT",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Patient",
+              "nodes": [
+                {
+                  "$ref": "START"
+                },
+                {
+                  "$ref": "APPROACH"
+                },
+                {
+                  "$ref": "PAY"
+                }
+              ]
+            },
+            {
+              "_type": "UMLActivityPartition",
+              "_id": "RECEPTIONIST",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Receptionist",
+              "nodes": [
+                {
+                  "$ref": "CHECK"
+                },
+                {
+                  "$ref": "GENERATE"
+                },
+                {
+                  "$ref": "VERIFY"
+                },
+                {
+                  "$ref": "DECISION"
+                },
+                {
+                  "$ref": "PAYMENT_DUE"
+                },
+                {
+                  "$ref": "HANDOVER"
+                },
+                {
+                  "$ref": "FINAL"
+                }
+              ]
+            },
+            {
+              "_type": "UMLInitialNode",
+              "_id": "START",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": ""
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "APPROACH",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Approaches with discharge advice"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "CHECK",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Check details"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "GENERATE",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Generate discharge Ticket"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "VERIFY",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Verify bill"
+            },
+            {
+              "_type": "UMLDecisionNode",
+              "_id": "DECISION",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": ""
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "PAYMENT_DUE",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Payment due"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "PAY",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Pay due amount"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "HANDOVER",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Handover Discharge ticket"
+            },
+            {
+              "_type": "UMLActivityFinalNode",
+              "_id": "FINAL",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": ""
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "E1",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "START"
+              },
+              "target": {
+                "$ref": "APPROACH"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "E2",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "APPROACH"
+              },
+              "target": {
+                "$ref": "CHECK"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "E3",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "CHECK"
+              },
+              "target": {
+                "$ref": "GENERATE"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "E4",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "GENERATE"
+              },
+              "target": {
+                "$ref": "VERIFY"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "E5",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "VERIFY"
+              },
+              "target": {
+                "$ref": "DECISION"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "E6",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "DECISION"
+              },
+              "target": {
+                "$ref": "PAYMENT_DUE"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "E7",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "PAYMENT_DUE"
+              },
+              "target": {
+                "$ref": "PAY"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "E8",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "PAY"
+              },
+              "target": {
+                "$ref": "HANDOVER"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "E9",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "DECISION"
+              },
+              "target": {
+                "$ref": "HANDOVER"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "E10",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "HANDOVER"
+              },
+              "target": {
+                "$ref": "FINAL"
+              }
+            },
+            {
+              "_type": "UMLActivityDiagram",
+              "_id": "D1",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Activity Diagram Discharge",
+              "ownedViews": [
+                {
+                  "_type": "UMLTextBoxView",
+                  "_id": "TITLEV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "TITLEL",
+                      "_parent": {
+                        "$ref": "TITLEV"
+                      },
+                      "font": "Arial;20;1",
+                      "parentStyle": false,
+                      "left": 350,
+                      "top": 30,
+                      "width": 330,
+                      "height": 25,
+                      "text": "Activity Diagram Discharge",
+                      "horizontalAlignment": 0,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;20;1",
+                  "parentStyle": false,
+                  "left": 345,
+                  "top": 26,
+                  "width": 340,
+                  "height": 28,
+                  "fillColor": "#ffffff",
+                  "lineColor": "#ffffff",
+                  "nameLabel": {
+                    "$ref": "TITLEL"
+                  }
+                },
+                {
+                  "_type": "UMLSwimlaneView",
+                  "_id": "LANE1V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "PATIENT"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "LANE1VL",
+                      "_parent": {
+                        "$ref": "LANE1V"
+                      },
+                      "font": "Arial;20;1",
+                      "parentStyle": false,
+                      "left": 67,
+                      "top": 82,
+                      "width": 293,
+                      "height": 35,
+                      "text": "Patient",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;20;1",
+                  "parentStyle": false,
+                  "left": 62,
+                  "top": 70,
+                  "width": 303,
+                  "height": 800,
+                  "isVertical": true,
+                  "nameLabel": {
+                    "$ref": "LANE1VL"
+                  },
+                  "fillColor": "#ffffff",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1.5
+                },
+                {
+                  "_type": "UMLSwimlaneView",
+                  "_id": "LANE2V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "RECEPTIONIST"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "LANE2VL",
+                      "_parent": {
+                        "$ref": "LANE2V"
+                      },
+                      "font": "Arial;20;1",
+                      "parentStyle": false,
+                      "left": 370,
+                      "top": 82,
+                      "width": 441,
+                      "height": 35,
+                      "text": "Receptionist",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;20;1",
+                  "parentStyle": false,
+                  "left": 365,
+                  "top": 70,
+                  "width": 451,
+                  "height": 800,
+                  "isVertical": true,
+                  "nameLabel": {
+                    "$ref": "LANE2VL"
+                  },
+                  "fillColor": "#ffffff",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1.5
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "APPROACHV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "APPROACH"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "APPROACHVL",
+                      "_parent": {
+                        "$ref": "APPROACHV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 142,
+                      "top": 234,
+                      "width": 115,
+                      "height": 53,
+                      "text": "Approaches with\ndischarge advice",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 138,
+                  "top": 230,
+                  "width": 123,
+                  "height": 61,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "APPROACHVL"
+                  },
+                  "roundCorner": 15
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "CHECKV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CHECK"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "CHECKVL",
+                      "_parent": {
+                        "$ref": "CHECKV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 522,
+                      "top": 234,
+                      "width": 114,
+                      "height": 53,
+                      "text": "Check details",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 518,
+                  "top": 230,
+                  "width": 122,
+                  "height": 61,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "CHECKVL"
+                  },
+                  "roundCorner": 15
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "GENERATEV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "GENERATE"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "GENERATEVL",
+                      "_parent": {
+                        "$ref": "GENERATEV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 522,
+                      "top": 341,
+                      "width": 114,
+                      "height": 54,
+                      "text": "Generate\ndischarge Ticket",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 518,
+                  "top": 337,
+                  "width": 122,
+                  "height": 62,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "GENERATEVL"
+                  },
+                  "roundCorner": 15
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "VERIFYV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "VERIFY"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "VERIFYVL",
+                      "_parent": {
+                        "$ref": "VERIFYV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 522,
+                      "top": 448,
+                      "width": 114,
+                      "height": 54,
+                      "text": "Verify bill",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 518,
+                  "top": 444,
+                  "width": 122,
+                  "height": 62,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "VERIFYVL"
+                  },
+                  "roundCorner": 15
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "PAYMENTV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "PAYMENT_DUE"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "PAYMENTVL",
+                      "_parent": {
+                        "$ref": "PAYMENTV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 383,
+                      "top": 602,
+                      "width": 115,
+                      "height": 38,
+                      "text": "Payment due",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 379,
+                  "top": 598,
+                  "width": 123,
+                  "height": 46,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "PAYMENTVL"
+                  },
+                  "roundCorner": 0
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "PAYV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "PAY"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "PAYVL",
+                      "_parent": {
+                        "$ref": "PAYV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 115,
+                      "top": 602,
+                      "width": 115,
+                      "height": 54,
+                      "text": "Pay due\namount",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 111,
+                  "top": 598,
+                  "width": 123,
+                  "height": 62,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "PAYVL"
+                  },
+                  "roundCorner": 15
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "HANDOVERV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "HANDOVER"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "HANDOVERVL",
+                      "_parent": {
+                        "$ref": "HANDOVERV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 648,
+                      "top": 670,
+                      "width": 115,
+                      "height": 54,
+                      "text": "Handover\nDischarge ticket",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 644,
+                  "top": 666,
+                  "width": 123,
+                  "height": 62,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "HANDOVERVL"
+                  },
+                  "roundCorner": 15
+                },
+                {
+                  "_type": "UMLControlNodeView",
+                  "_id": "STARTV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "START"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 172,
+                  "top": 153,
+                  "width": 36,
+                  "height": 36,
+                  "fillColor": "#000000",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1
+                },
+                {
+                  "_type": "UMLControlNodeView",
+                  "_id": "DECISIONV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "DECISION"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 568,
+                  "top": 517,
+                  "width": 22,
+                  "height": 32,
+                  "fillColor": "#ffffff",
+                  "lineColor": "#000000",
+                  "lineWidth": 2
+                },
+                {
+                  "_type": "UMLControlNodeView",
+                  "_id": "FINALV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "FINAL"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 688,
+                  "top": 782,
+                  "width": 36,
+                  "height": 36,
+                  "fillColor": "#ffffff",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "E1V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "E1"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "STARTV"
+                  },
+                  "head": {
+                    "$ref": "APPROACHV"
+                  },
+                  "points": "190:189;190:230"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "E2V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "E2"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "APPROACHV"
+                  },
+                  "head": {
+                    "$ref": "CHECKV"
+                  },
+                  "points": "261:260;518:260"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "E3V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "E3"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "CHECKV"
+                  },
+                  "head": {
+                    "$ref": "GENERATEV"
+                  },
+                  "points": "579:291;579:337"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "E4V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "E4"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "GENERATEV"
+                  },
+                  "head": {
+                    "$ref": "VERIFYV"
+                  },
+                  "points": "579:399;579:444"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "E5V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "E5"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "VERIFYV"
+                  },
+                  "head": {
+                    "$ref": "DECISIONV"
+                  },
+                  "points": "579:506;579:517"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "E6V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "E6"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "DECISIONV"
+                  },
+                  "head": {
+                    "$ref": "PAYMENTV"
+                  },
+                  "points": "579:549;440:598"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "E7V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "E7"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "PAYMENTV"
+                  },
+                  "head": {
+                    "$ref": "PAYV"
+                  },
+                  "points": "379:621;234:621"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "E8V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "E8"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "PAYV"
+                  },
+                  "head": {
+                    "$ref": "HANDOVERV"
+                  },
+                  "points": "172:660;172:697;644:697"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "E9V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "E9"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "DECISIONV"
+                  },
+                  "head": {
+                    "$ref": "HANDOVERV"
+                  },
+                  "points": "590:533;695:666"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "E10V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "E10"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "HANDOVERV"
+                  },
+                  "head": {
+                    "$ref": "FINALV"
+                  },
+                  "points": "706:728;706:782"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

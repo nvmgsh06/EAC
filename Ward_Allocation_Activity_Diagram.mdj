@@ -1,0 +1,1033 @@
+{
+  "_type": "Project",
+  "_id": "P1",
+  "name": "Ward Allocation at Hospital",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "M1",
+      "_parent": {
+        "$ref": "P1"
+      },
+      "name": "Ward Allocation",
+      "ownedElements": [
+        {
+          "_type": "UMLActivity",
+          "_id": "ACT1",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Ward Allocation at Hospital",
+          "ownedElements": [
+            {
+              "_type": "UMLActivityPartition",
+              "_id": "PART_PATIENT",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Patient",
+              "nodes": [
+                {
+                  "$ref": "PROVIDE"
+                }
+              ]
+            },
+            {
+              "_type": "UMLActivityPartition",
+              "_id": "PART_RECEPTIONIST",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Receptionist",
+              "nodes": [
+                {
+                  "$ref": "START"
+                },
+                {
+                  "$ref": "CHECK"
+                },
+                {
+                  "$ref": "DECISION"
+                },
+                {
+                  "$ref": "ASK"
+                },
+                {
+                  "$ref": "ALLOCATE"
+                },
+                {
+                  "$ref": "FORK"
+                },
+                {
+                  "$ref": "DETAILS"
+                },
+                {
+                  "$ref": "UPDATED"
+                },
+                {
+                  "$ref": "JOIN"
+                },
+                {
+                  "$ref": "END"
+                }
+              ]
+            },
+            {
+              "_type": "UMLInitialNode",
+              "_id": "START",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": ""
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "CHECK",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Check Ward Availability"
+            },
+            {
+              "_type": "UMLDecisionNode",
+              "_id": "DECISION",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": ""
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "ASK",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Ask for new dates"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "PROVIDE",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "provide new dates"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "ALLOCATE",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Allocate"
+            },
+            {
+              "_type": "UMLForkNode",
+              "_id": "FORK",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": ""
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "DETAILS",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "ward allocation details to patients"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "UPDATED",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "updated ward information to patients"
+            },
+            {
+              "_type": "UMLJoinNode",
+              "_id": "JOIN",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": ""
+            },
+            {
+              "_type": "UMLActivityFinalNode",
+              "_id": "END",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": ""
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF1",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "START"
+              },
+              "target": {
+                "$ref": "CHECK"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF2",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "CHECK"
+              },
+              "target": {
+                "$ref": "DECISION"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF3",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "DECISION"
+              },
+              "target": {
+                "$ref": "ASK"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF4",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "ASK"
+              },
+              "target": {
+                "$ref": "PROVIDE"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF5",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "PROVIDE"
+              },
+              "target": {
+                "$ref": "CHECK"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF6",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "DECISION"
+              },
+              "target": {
+                "$ref": "ALLOCATE"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF7",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "ALLOCATE"
+              },
+              "target": {
+                "$ref": "FORK"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF8",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "FORK"
+              },
+              "target": {
+                "$ref": "DETAILS"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF9",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "FORK"
+              },
+              "target": {
+                "$ref": "UPDATED"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF10",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "DETAILS"
+              },
+              "target": {
+                "$ref": "JOIN"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF11",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "UPDATED"
+              },
+              "target": {
+                "$ref": "JOIN"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "CF12",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "JOIN"
+              },
+              "target": {
+                "$ref": "END"
+              }
+            },
+            {
+              "_type": "UMLActivityDiagram",
+              "_id": "D1",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Activity Diagram for Ward Allocation at Hospital",
+              "ownedViews": [
+                {
+                  "_type": "UMLTextBoxView",
+                  "_id": "TITLEV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "TITLEL",
+                      "_parent": {
+                        "$ref": "TITLEV"
+                      },
+                      "font": "Arial;22;1",
+                      "parentStyle": false,
+                      "left": 85,
+                      "top": 15,
+                      "width": 565,
+                      "height": 30,
+                      "text": "Activity Diagram for Ward Allocation at Hospital",
+                      "horizontalAlignment": 0,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;22;1",
+                  "parentStyle": false,
+                  "left": 80,
+                  "top": 10,
+                  "width": 580,
+                  "height": 38,
+                  "fillColor": "#ffffff",
+                  "lineColor": "#ffffff",
+                  "nameLabel": {
+                    "$ref": "TITLEL"
+                  }
+                },
+                {
+                  "_type": "UMLSwimlaneView",
+                  "_id": "LANE1V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "PART_PATIENT"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "LANE1VL",
+                      "_parent": {
+                        "$ref": "LANE1V"
+                      },
+                      "font": "Arial;17;1",
+                      "parentStyle": false,
+                      "left": 54,
+                      "top": 70,
+                      "width": 234,
+                      "height": 44,
+                      "text": "Patient",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;17;1",
+                  "parentStyle": false,
+                  "left": 49,
+                  "top": 53,
+                  "width": 244,
+                  "height": 798,
+                  "isVertical": true,
+                  "nameLabel": {
+                    "$ref": "LANE1VL"
+                  },
+                  "fillColor": "#ffffff",
+                  "lineColor": "#10194b",
+                  "lineWidth": 2
+                },
+                {
+                  "_type": "UMLSwimlaneView",
+                  "_id": "LANE2V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "PART_RECEPTIONIST"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "LANE2VL",
+                      "_parent": {
+                        "$ref": "LANE2V"
+                      },
+                      "font": "Arial;17;1",
+                      "parentStyle": false,
+                      "left": 298,
+                      "top": 70,
+                      "width": 366,
+                      "height": 44,
+                      "text": "Receptionist",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;17;1",
+                  "parentStyle": false,
+                  "left": 293,
+                  "top": 53,
+                  "width": 376,
+                  "height": 798,
+                  "isVertical": true,
+                  "nameLabel": {
+                    "$ref": "LANE2VL"
+                  },
+                  "fillColor": "#ffffff",
+                  "lineColor": "#10194b",
+                  "lineWidth": 2
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "CHECKV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CHECK"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "CHECKVL",
+                      "_parent": {
+                        "$ref": "CHECKV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 341,
+                      "top": 186,
+                      "width": 132,
+                      "height": 62,
+                      "text": "Check Ward\nAvailability",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 336,
+                  "top": 181,
+                  "width": 142,
+                  "height": 72,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "CHECKVL"
+                  },
+                  "roundCorner": 15
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "ASKV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "ASK"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "ASKVL",
+                      "_parent": {
+                        "$ref": "ASKV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 305,
+                      "top": 365,
+                      "width": 92,
+                      "height": 42,
+                      "text": "Ask for new\ndates",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 300,
+                  "top": 360,
+                  "width": 102,
+                  "height": 52,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "ASKVL"
+                  },
+                  "roundCorner": 15
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "PROVIDEV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "PROVIDE"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "PROVIDEVL",
+                      "_parent": {
+                        "$ref": "PROVIDEV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 76,
+                      "top": 374,
+                      "width": 117,
+                      "height": 42,
+                      "text": "provide new\ndates",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 71,
+                  "top": 369,
+                  "width": 127,
+                  "height": 52,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "PROVIDEVL"
+                  },
+                  "roundCorner": 15
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "ALLOCATEV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "ALLOCATE"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "ALLOCATEVL",
+                      "_parent": {
+                        "$ref": "ALLOCATEV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 416,
+                      "top": 365,
+                      "width": 92,
+                      "height": 42,
+                      "text": "Allocate",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 411,
+                  "top": 360,
+                  "width": 102,
+                  "height": 52,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "ALLOCATEVL"
+                  },
+                  "roundCorner": 15
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "DETAILSV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "DETAILS"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "DETAILSVL",
+                      "_parent": {
+                        "$ref": "DETAILSV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 318,
+                      "top": 570,
+                      "width": 139,
+                      "height": 53,
+                      "text": "ward allocation\ndetails to\npatients",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 313,
+                  "top": 565,
+                  "width": 149,
+                  "height": 63,
+                  "fillColor": "#50d0c3",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "DETAILSVL"
+                  },
+                  "roundCorner": 0
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "UPDATEDV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "UPDATED"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "UPDATEDVL",
+                      "_parent": {
+                        "$ref": "UPDATEDV"
+                      },
+                      "font": "Arial;14;1",
+                      "parentStyle": false,
+                      "left": 487,
+                      "top": 570,
+                      "width": 139,
+                      "height": 53,
+                      "text": "updated  ward\ninformation to\npatients",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;14;1",
+                  "parentStyle": false,
+                  "left": 482,
+                  "top": 565,
+                  "width": 149,
+                  "height": 63,
+                  "fillColor": "#50d0c3",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "UPDATEDVL"
+                  },
+                  "roundCorner": 0
+                },
+                {
+                  "_type": "UMLControlNodeView",
+                  "_id": "STARTV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "START"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 389,
+                  "top": 114,
+                  "width": 36,
+                  "height": 36,
+                  "fillColor": "#000000",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1
+                },
+                {
+                  "_type": "UMLControlNodeView",
+                  "_id": "DECISIONV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "DECISION"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 389,
+                  "top": 270,
+                  "width": 36,
+                  "height": 36,
+                  "fillColor": "#ffffff",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1
+                },
+                {
+                  "_type": "UMLControlNodeView",
+                  "_id": "ENDV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "END"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 444,
+                  "top": 762,
+                  "width": 36,
+                  "height": 36,
+                  "fillColor": "#ffffff",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1
+                },
+                {
+                  "_type": "UMLControlNodeView",
+                  "_id": "FORKV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "FORK"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 389,
+                  "top": 472,
+                  "width": 142,
+                  "height": 13,
+                  "fillColor": "#000000",
+                  "lineColor": "#000000",
+                  "lineWidth": 1
+                },
+                {
+                  "_type": "UMLControlNodeView",
+                  "_id": "JOINV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "JOIN"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 391,
+                  "top": 701,
+                  "width": 142,
+                  "height": 12,
+                  "fillColor": "#000000",
+                  "lineColor": "#000000",
+                  "lineWidth": 1
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF1V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF1"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "STARTV"
+                  },
+                  "head": {
+                    "$ref": "CHECKV"
+                  },
+                  "points": "407:150;407:181"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF2V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF2"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "CHECKV"
+                  },
+                  "head": {
+                    "$ref": "DECISIONV"
+                  },
+                  "points": "407:253;407:270"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF3V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF3"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "DECISIONV"
+                  },
+                  "head": {
+                    "$ref": "ASKV"
+                  },
+                  "points": "407:306;351:360"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF4V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF4"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "ASKV"
+                  },
+                  "head": {
+                    "$ref": "PROVIDEV"
+                  },
+                  "points": "300:386;198:395"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF5V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF5"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "PROVIDEV"
+                  },
+                  "head": {
+                    "$ref": "CHECKV"
+                  },
+                  "points": "134:369;134:217;336:217"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF6V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF6"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "DECISIONV"
+                  },
+                  "head": {
+                    "$ref": "ALLOCATEV"
+                  },
+                  "points": "407:306;462:360"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF7V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF7"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "ALLOCATEV"
+                  },
+                  "head": {
+                    "$ref": "FORKV"
+                  },
+                  "points": "462:412;457:472"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF8V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF8"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "FORKV"
+                  },
+                  "head": {
+                    "$ref": "DETAILSV"
+                  },
+                  "points": "399:485;399:565"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF9V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF9"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "FORKV"
+                  },
+                  "head": {
+                    "$ref": "UPDATEDV"
+                  },
+                  "points": "513:485;513:565"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF10V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF10"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "DETAILSV"
+                  },
+                  "head": {
+                    "$ref": "JOINV"
+                  },
+                  "points": "405:628;405:701"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF11V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF11"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "UPDATEDV"
+                  },
+                  "head": {
+                    "$ref": "JOINV"
+                  },
+                  "points": "509:628;509:701"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "CF12V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "CF12"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "JOINV"
+                  },
+                  "head": {
+                    "$ref": "ENDV"
+                  },
+                  "points": "462:713;462:762"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

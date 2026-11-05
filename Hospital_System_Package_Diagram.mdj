@@ -1,0 +1,1047 @@
+{
+  "_type": "Project",
+  "_id": "P1",
+  "name": "Hospital System Package Diagram",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "M1",
+      "_parent": {
+        "$ref": "P1"
+      },
+      "name": "Hospital System",
+      "ownedElements": [
+        {
+          "_type": "UMLPackage",
+          "_id": "STAFF",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Staff",
+          "ownedElements": []
+        },
+        {
+          "_type": "UMLPackage",
+          "_id": "DOCTOR",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Doctor",
+          "ownedElements": []
+        },
+        {
+          "_type": "UMLPackage",
+          "_id": "RECEPTIONIST",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Receptionist",
+          "ownedElements": []
+        },
+        {
+          "_type": "UMLPackage",
+          "_id": "PHARMACIST",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Pharmacist",
+          "ownedElements": []
+        },
+        {
+          "_type": "UMLPackage",
+          "_id": "OPERATION",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Operation",
+          "ownedElements": []
+        },
+        {
+          "_type": "UMLPackage",
+          "_id": "PATIENT",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Patient",
+          "ownedElements": []
+        },
+        {
+          "_type": "UMLPackage",
+          "_id": "WARD",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Ward",
+          "ownedElements": []
+        },
+        {
+          "_type": "UMLPackage",
+          "_id": "WARDSTAFF",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Ward Staff",
+          "ownedElements": []
+        },
+        {
+          "_type": "UMLPackageDiagram",
+          "_id": "D1",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Package Diagram Hospital System",
+          "ownedViews": [
+            {
+              "_type": "UMLTextBoxView",
+              "_id": "TITLEV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "TITLEL",
+                  "_parent": {
+                    "$ref": "TITLEV"
+                  },
+                  "font": "Arial;18;1",
+                  "parentStyle": false,
+                  "left": 343,
+                  "top": 39,
+                  "width": 300,
+                  "height": 24,
+                  "text": "Package Diagram Hospital System",
+                  "horizontalAlignment": 1,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;18;1",
+              "parentStyle": false,
+              "left": 342,
+              "top": 34,
+              "width": 310,
+              "height": 28,
+              "fillColor": "#ffffff",
+              "lineColor": "#ffffff",
+              "nameLabel": {
+                "$ref": "TITLEL"
+              }
+            },
+            {
+              "_type": "UMLPackageView",
+              "_id": "STAFFV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "STAFF"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLPackageNameCompartmentView",
+                  "_id": "STAFFVTAB",
+                  "_parent": {
+                    "$ref": "STAFFV"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "STAFFVTABL",
+                      "_parent": {
+                        "$ref": "STAFFVTAB"
+                      },
+                      "font": "Arial;13;1",
+                      "parentStyle": false,
+                      "left": 487,
+                      "top": 103,
+                      "width": 98,
+                      "height": 20,
+                      "text": "Package",
+                      "horizontalAlignment": 0,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 482,
+                  "top": 98,
+                  "width": 108,
+                  "height": 30,
+                  "fillColor": "#ffcc4d",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "STAFFVTABL"
+                  }
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "STAFFVL",
+                  "_parent": {
+                    "$ref": "STAFFV"
+                  },
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 487,
+                  "top": 145,
+                  "width": 170,
+                  "height": 48,
+                  "text": "Staff",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;1",
+              "parentStyle": false,
+              "left": 482,
+              "top": 98,
+              "width": 180,
+              "height": 98,
+              "fillColor": "#ffcc4d",
+              "lineColor": "#10194b",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "STAFFVL"
+              }
+            },
+            {
+              "_type": "UMLPackageView",
+              "_id": "DOCTORV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "DOCTOR"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLPackageNameCompartmentView",
+                  "_id": "DOCTORVTAB",
+                  "_parent": {
+                    "$ref": "DOCTORV"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "DOCTORVTABL",
+                      "_parent": {
+                        "$ref": "DOCTORVTAB"
+                      },
+                      "font": "Arial;13;1",
+                      "parentStyle": false,
+                      "left": 70,
+                      "top": 291,
+                      "width": 98,
+                      "height": 20,
+                      "text": "Package",
+                      "horizontalAlignment": 0,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 65,
+                  "top": 286,
+                  "width": 108,
+                  "height": 30,
+                  "fillColor": "#ffcc4d",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "DOCTORVTABL"
+                  }
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "DOCTORVL",
+                  "_parent": {
+                    "$ref": "DOCTORV"
+                  },
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 70,
+                  "top": 333,
+                  "width": 171,
+                  "height": 47,
+                  "text": "Doctor",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;1",
+              "parentStyle": false,
+              "left": 65,
+              "top": 286,
+              "width": 181,
+              "height": 97,
+              "fillColor": "#ffcc4d",
+              "lineColor": "#10194b",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "DOCTORVL"
+              }
+            },
+            {
+              "_type": "UMLPackageView",
+              "_id": "RECEPTIONISTV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "RECEPTIONIST"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLPackageNameCompartmentView",
+                  "_id": "RECEPTIONISTVTAB",
+                  "_parent": {
+                    "$ref": "RECEPTIONISTV"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "RECEPTIONISTVTABL",
+                      "_parent": {
+                        "$ref": "RECEPTIONISTVTAB"
+                      },
+                      "font": "Arial;13;1",
+                      "parentStyle": false,
+                      "left": 360,
+                      "top": 298,
+                      "width": 98,
+                      "height": 20,
+                      "text": "Package",
+                      "horizontalAlignment": 0,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 355,
+                  "top": 293,
+                  "width": 108,
+                  "height": 30,
+                  "fillColor": "#ffcc4d",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "RECEPTIONISTVTABL"
+                  }
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "RECEPTIONISTVL",
+                  "_parent": {
+                    "$ref": "RECEPTIONISTV"
+                  },
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 360,
+                  "top": 340,
+                  "width": 170,
+                  "height": 47,
+                  "text": "Receptionist",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;1",
+              "parentStyle": false,
+              "left": 355,
+              "top": 293,
+              "width": 180,
+              "height": 97,
+              "fillColor": "#ffcc4d",
+              "lineColor": "#10194b",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "RECEPTIONISTVL"
+              }
+            },
+            {
+              "_type": "UMLPackageView",
+              "_id": "PHARMACISTV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "PHARMACIST"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLPackageNameCompartmentView",
+                  "_id": "PHARMACISTVTAB",
+                  "_parent": {
+                    "$ref": "PHARMACISTV"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "PHARMACISTVTABL",
+                      "_parent": {
+                        "$ref": "PHARMACISTVTAB"
+                      },
+                      "font": "Arial;13;1",
+                      "parentStyle": false,
+                      "left": 613,
+                      "top": 298,
+                      "width": 98,
+                      "height": 20,
+                      "text": "Package",
+                      "horizontalAlignment": 0,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 608,
+                  "top": 293,
+                  "width": 108,
+                  "height": 30,
+                  "fillColor": "#ffcc4d",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "PHARMACISTVTABL"
+                  }
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "PHARMACISTVL",
+                  "_parent": {
+                    "$ref": "PHARMACISTV"
+                  },
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 613,
+                  "top": 340,
+                  "width": 171,
+                  "height": 47,
+                  "text": "Pharmacist",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;1",
+              "parentStyle": false,
+              "left": 608,
+              "top": 293,
+              "width": 181,
+              "height": 97,
+              "fillColor": "#ffcc4d",
+              "lineColor": "#10194b",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "PHARMACISTVL"
+              }
+            },
+            {
+              "_type": "UMLPackageView",
+              "_id": "OPERATIONV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "OPERATION"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLPackageNameCompartmentView",
+                  "_id": "OPERATIONVTAB",
+                  "_parent": {
+                    "$ref": "OPERATIONV"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "OPERATIONVTABL",
+                      "_parent": {
+                        "$ref": "OPERATIONVTAB"
+                      },
+                      "font": "Arial;13;1",
+                      "parentStyle": false,
+                      "left": 129,
+                      "top": 565,
+                      "width": 98,
+                      "height": 20,
+                      "text": "Package",
+                      "horizontalAlignment": 0,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 124,
+                  "top": 560,
+                  "width": 108,
+                  "height": 30,
+                  "fillColor": "#ffcc4d",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "OPERATIONVTABL"
+                  }
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "OPERATIONVL",
+                  "_parent": {
+                    "$ref": "OPERATIONV"
+                  },
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 129,
+                  "top": 607,
+                  "width": 171,
+                  "height": 48,
+                  "text": "Operation",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;1",
+              "parentStyle": false,
+              "left": 124,
+              "top": 560,
+              "width": 181,
+              "height": 98,
+              "fillColor": "#ffcc4d",
+              "lineColor": "#10194b",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "OPERATIONVL"
+              }
+            },
+            {
+              "_type": "UMLPackageView",
+              "_id": "PATIENTV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "PATIENT"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLPackageNameCompartmentView",
+                  "_id": "PATIENTVTAB",
+                  "_parent": {
+                    "$ref": "PATIENTV"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "PATIENTVTABL",
+                      "_parent": {
+                        "$ref": "PATIENTVTAB"
+                      },
+                      "font": "Arial;13;1",
+                      "parentStyle": false,
+                      "left": 396,
+                      "top": 565,
+                      "width": 98,
+                      "height": 20,
+                      "text": "Package",
+                      "horizontalAlignment": 0,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 391,
+                  "top": 560,
+                  "width": 108,
+                  "height": 30,
+                  "fillColor": "#ffcc4d",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "PATIENTVTABL"
+                  }
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "PATIENTVL",
+                  "_parent": {
+                    "$ref": "PATIENTV"
+                  },
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 396,
+                  "top": 607,
+                  "width": 171,
+                  "height": 48,
+                  "text": "Patient",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;1",
+              "parentStyle": false,
+              "left": 391,
+              "top": 560,
+              "width": 181,
+              "height": 98,
+              "fillColor": "#ffcc4d",
+              "lineColor": "#10194b",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "PATIENTVL"
+              }
+            },
+            {
+              "_type": "UMLPackageView",
+              "_id": "WARDV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "WARD"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLPackageNameCompartmentView",
+                  "_id": "WARDVTAB",
+                  "_parent": {
+                    "$ref": "WARDV"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "WARDVTABL",
+                      "_parent": {
+                        "$ref": "WARDVTAB"
+                      },
+                      "font": "Arial;13;1",
+                      "parentStyle": false,
+                      "left": 641,
+                      "top": 570,
+                      "width": 98,
+                      "height": 20,
+                      "text": "Package",
+                      "horizontalAlignment": 0,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 636,
+                  "top": 565,
+                  "width": 108,
+                  "height": 30,
+                  "fillColor": "#ffcc4d",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "WARDVTABL"
+                  }
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "WARDVL",
+                  "_parent": {
+                    "$ref": "WARDV"
+                  },
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 641,
+                  "top": 612,
+                  "width": 171,
+                  "height": 48,
+                  "text": "Ward",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;1",
+              "parentStyle": false,
+              "left": 636,
+              "top": 565,
+              "width": 181,
+              "height": 98,
+              "fillColor": "#ffcc4d",
+              "lineColor": "#10194b",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "WARDVL"
+              }
+            },
+            {
+              "_type": "UMLPackageView",
+              "_id": "WARDSTAFFV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "WARDSTAFF"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLPackageNameCompartmentView",
+                  "_id": "WARDSTAFFVTAB",
+                  "_parent": {
+                    "$ref": "WARDSTAFFV"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "WARDSTAFFVTABL",
+                      "_parent": {
+                        "$ref": "WARDSTAFFVTAB"
+                      },
+                      "font": "Arial;13;1",
+                      "parentStyle": false,
+                      "left": 557,
+                      "top": 748,
+                      "width": 98,
+                      "height": 20,
+                      "text": "Package",
+                      "horizontalAlignment": 0,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 552,
+                  "top": 743,
+                  "width": 108,
+                  "height": 30,
+                  "fillColor": "#ffcc4d",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "WARDSTAFFVTABL"
+                  }
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "WARDSTAFFVL",
+                  "_parent": {
+                    "$ref": "WARDSTAFFV"
+                  },
+                  "font": "Arial;13;1",
+                  "parentStyle": false,
+                  "left": 557,
+                  "top": 790,
+                  "width": 171,
+                  "height": 48,
+                  "text": "Ward Staff",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;1",
+              "parentStyle": false,
+              "left": 552,
+              "top": 743,
+              "width": 181,
+              "height": 98,
+              "fillColor": "#ffcc4d",
+              "lineColor": "#10194b",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "WARDSTAFFVL"
+              }
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "DEP1V",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "DEP1"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "STAFFV"
+              },
+              "head": {
+                "$ref": "DOCTORV"
+              },
+              "points": "572:132;126:132;126:256"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "DEP2V",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "DEP2"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "STAFFV"
+              },
+              "head": {
+                "$ref": "RECEPTIONISTV"
+              },
+              "points": "514:196;514:293"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "DEP3V",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "DEP3"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "STAFFV"
+              },
+              "head": {
+                "$ref": "PHARMACISTV"
+              },
+              "points": "662:132;740:132;740:256"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "DEP4V",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "DEP4"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "DOCTORV"
+              },
+              "head": {
+                "$ref": "OPERATIONV"
+              },
+              "points": "181:383;181:498;169:498;169:560"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "DEP5V",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "DEP5"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "DOCTORV"
+              },
+              "head": {
+                "$ref": "PATIENTV"
+              },
+              "points": "213:383;213:498;429:498;429:560"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "DEP6V",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "DEP6"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "PATIENTV"
+              },
+              "head": {
+                "$ref": "RECEPTIONISTV"
+              },
+              "points": "482:560;482:422;445:422;445:390"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "DEP7V",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "DEP7"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "RECEPTIONISTV"
+              },
+              "head": {
+                "$ref": "WARDV"
+              },
+              "points": "516:390;516:504;682:504;682:565"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "DEP8V",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "DEP8"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "WARDSTAFFV"
+              },
+              "head": {
+                "$ref": "PHARMACISTV"
+              },
+              "points": "733:792;888:792;888:347;789:347"
+            }
+          ]
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "DEP1",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "client": [
+            {
+              "$ref": "STAFF"
+            }
+          ],
+          "supplier": [
+            {
+              "$ref": "DOCTOR"
+            }
+          ]
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "DEP2",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "client": [
+            {
+              "$ref": "STAFF"
+            }
+          ],
+          "supplier": [
+            {
+              "$ref": "RECEPTIONIST"
+            }
+          ]
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "DEP3",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "client": [
+            {
+              "$ref": "STAFF"
+            }
+          ],
+          "supplier": [
+            {
+              "$ref": "PHARMACIST"
+            }
+          ]
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "DEP4",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "client": [
+            {
+              "$ref": "DOCTOR"
+            }
+          ],
+          "supplier": [
+            {
+              "$ref": "OPERATION"
+            }
+          ]
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "DEP5",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "client": [
+            {
+              "$ref": "DOCTOR"
+            }
+          ],
+          "supplier": [
+            {
+              "$ref": "PATIENT"
+            }
+          ]
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "DEP6",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "client": [
+            {
+              "$ref": "PATIENT"
+            }
+          ],
+          "supplier": [
+            {
+              "$ref": "RECEPTIONIST"
+            }
+          ]
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "DEP7",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "client": [
+            {
+              "$ref": "RECEPTIONIST"
+            }
+          ],
+          "supplier": [
+            {
+              "$ref": "WARD"
+            }
+          ]
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "DEP8",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "client": [
+            {
+              "$ref": "WARDSTAFF"
+            }
+          ],
+          "supplier": [
+            {
+              "$ref": "PHARMACIST"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

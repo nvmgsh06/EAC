@@ -1,0 +1,1130 @@
+{
+  "_type": "Project",
+  "_id": "P1",
+  "name": "General Service Delivery System",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "M1",
+      "_parent": {
+        "$ref": "P1"
+      },
+      "name": "Healthcare Providing Resources",
+      "ownedElements": [
+        {
+          "_type": "UMLClass",
+          "_id": "HPR",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Healthcare Providing Resources",
+          "stereotype": "block"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "HOSP",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Hospitals",
+          "stereotype": "block"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "RURAL",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Rural Health\nClinic",
+          "stereotype": "block"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "LOCAL",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Local Public\nAgencies",
+          "stereotype": "block"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "EMS",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Emergency Medical\nServices",
+          "stereotype": "block"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "CRITICAL",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Critical Care Hospitals",
+          "stereotype": "block"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "DENTISTS",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Primary care Dentists",
+          "stereotype": "block"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "PRIMARY",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Primary Medical Care",
+          "stereotype": "block"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "COMMUNITY",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Community Health Center",
+          "stereotype": "block"
+        },
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "D1",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Block Definition Diagram",
+          "ownedViews": [
+            {
+              "_type": "UMLTextBoxView",
+              "_id": "TITLEV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "TITLEL",
+                  "_parent": {
+                    "$ref": "TITLEV"
+                  },
+                  "font": "Arial;22;1",
+                  "parentStyle": false,
+                  "left": 352,
+                  "top": 53,
+                  "width": 250,
+                  "height": 25,
+                  "text": "Block Definition Diagram",
+                  "horizontalAlignment": 1,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;22;1",
+              "parentStyle": false,
+              "left": 350,
+              "top": 48,
+              "width": 260,
+              "height": 30,
+              "fillColor": "#ffffff",
+              "lineColor": "#ffffff",
+              "nameLabel": {
+                "$ref": "TITLEL"
+              }
+            },
+            {
+              "_type": "UMLTextBoxView",
+              "_id": "SUBV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "SUBL",
+                  "_parent": {
+                    "$ref": "SUBV"
+                  },
+                  "font": "Arial;18;1",
+                  "parentStyle": false,
+                  "left": 154,
+                  "top": 82,
+                  "width": 660,
+                  "height": 23,
+                  "text": "BDD [package] General Service Delivery System [Healthcare Providing Resources]",
+                  "horizontalAlignment": 1,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;18;1",
+              "parentStyle": false,
+              "left": 150,
+              "top": 78,
+              "width": 670,
+              "height": 27,
+              "fillColor": "#ffffff",
+              "lineColor": "#ffffff",
+              "nameLabel": {
+                "$ref": "SUBL"
+              }
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "HPRV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "HPR"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "HPRVS",
+                  "_parent": {
+                    "$ref": "HPRV"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 354,
+                  "top": 186,
+                  "width": 241,
+                  "height": 17,
+                  "text": "<<block>>",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "HPRVN",
+                  "_parent": {
+                    "$ref": "HPRV"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 354,
+                  "top": 210,
+                  "width": 241,
+                  "height": 45,
+                  "text": "Healthcare Providing Resources",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "left": 349,
+              "top": 179,
+              "width": 251,
+              "height": 80,
+              "fillColor": "#ff7777",
+              "lineColor": "#5365ff",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "HPRVN"
+              },
+              "stereotypeLabel": {
+                "$ref": "HPRVS"
+              },
+              "showStereotype": true,
+              "showProperty": false,
+              "showOperation": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "HOSPV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "HOSP"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "HOSPVS",
+                  "_parent": {
+                    "$ref": "HOSPV"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 51,
+                  "top": 325,
+                  "width": 143,
+                  "height": 17,
+                  "text": "<<block>>",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "HOSPVN",
+                  "_parent": {
+                    "$ref": "HOSPV"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 51,
+                  "top": 349,
+                  "width": 143,
+                  "height": 45,
+                  "text": "Hospitals",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "left": 46,
+              "top": 318,
+              "width": 153,
+              "height": 80,
+              "fillColor": "#ff7777",
+              "lineColor": "#5365ff",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "HOSPVN"
+              },
+              "stereotypeLabel": {
+                "$ref": "HOSPVS"
+              },
+              "showStereotype": true,
+              "showProperty": false,
+              "showOperation": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "RURALV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "RURAL"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "RURALVS",
+                  "_parent": {
+                    "$ref": "RURALV"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 333,
+                  "top": 325,
+                  "width": 118,
+                  "height": 17,
+                  "text": "<<block>>",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "RURALVN",
+                  "_parent": {
+                    "$ref": "RURALV"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 333,
+                  "top": 349,
+                  "width": 118,
+                  "height": 45,
+                  "text": "Rural Health Clinic",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "left": 328,
+              "top": 318,
+              "width": 128,
+              "height": 80,
+              "fillColor": "#ff7777",
+              "lineColor": "#5365ff",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "RURALVN"
+              },
+              "stereotypeLabel": {
+                "$ref": "RURALVS"
+              },
+              "showStereotype": true,
+              "showProperty": false,
+              "showOperation": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "LOCALV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "LOCAL"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "LOCALVS",
+                  "_parent": {
+                    "$ref": "LOCALV"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 543,
+                  "top": 325,
+                  "width": 118,
+                  "height": 17,
+                  "text": "<<block>>",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "LOCALVN",
+                  "_parent": {
+                    "$ref": "LOCALV"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 543,
+                  "top": 349,
+                  "width": 118,
+                  "height": 45,
+                  "text": "Local Public Agencies",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "left": 538,
+              "top": 318,
+              "width": 128,
+              "height": 80,
+              "fillColor": "#ff7777",
+              "lineColor": "#5365ff",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "LOCALVN"
+              },
+              "stereotypeLabel": {
+                "$ref": "LOCALVS"
+              },
+              "showStereotype": true,
+              "showProperty": false,
+              "showOperation": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "EMSV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "EMS"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "EMSVS",
+                  "_parent": {
+                    "$ref": "EMSV"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 770,
+                  "top": 312,
+                  "width": 118,
+                  "height": 17,
+                  "text": "<<block>>",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "EMSVN",
+                  "_parent": {
+                    "$ref": "EMSV"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 770,
+                  "top": 336,
+                  "width": 118,
+                  "height": 71,
+                  "text": "Emergency Medical Services",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "left": 765,
+              "top": 305,
+              "width": 128,
+              "height": 106,
+              "fillColor": "#ff7777",
+              "lineColor": "#5365ff",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "EMSVN"
+              },
+              "stereotypeLabel": {
+                "$ref": "EMSVS"
+              },
+              "showStereotype": true,
+              "showProperty": false,
+              "showOperation": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "CRITICALV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "CRITICAL"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "CRITICALVS",
+                  "_parent": {
+                    "$ref": "CRITICALV"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 109,
+                  "top": 547,
+                  "width": 145,
+                  "height": 17,
+                  "text": "<<block>>",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "CRITICALVN",
+                  "_parent": {
+                    "$ref": "CRITICALV"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 109,
+                  "top": 571,
+                  "width": 145,
+                  "height": 47,
+                  "text": "Critical Care Hospitals",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "left": 104,
+              "top": 540,
+              "width": 155,
+              "height": 82,
+              "fillColor": "#ff7777",
+              "lineColor": "#5365ff",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "CRITICALVN"
+              },
+              "stereotypeLabel": {
+                "$ref": "CRITICALVS"
+              },
+              "showStereotype": true,
+              "showProperty": false,
+              "showOperation": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "DENTISTSV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "DENTISTS"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "DENTISTSVS",
+                  "_parent": {
+                    "$ref": "DENTISTSV"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 333,
+                  "top": 547,
+                  "width": 118,
+                  "height": 17,
+                  "text": "<<block>>",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "DENTISTSVN",
+                  "_parent": {
+                    "$ref": "DENTISTSV"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 333,
+                  "top": 571,
+                  "width": 118,
+                  "height": 46,
+                  "text": "Primary care Dentists",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "left": 328,
+              "top": 540,
+              "width": 128,
+              "height": 81,
+              "fillColor": "#ff7777",
+              "lineColor": "#5365ff",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "DENTISTSVN"
+              },
+              "stereotypeLabel": {
+                "$ref": "DENTISTSVS"
+              },
+              "showStereotype": true,
+              "showProperty": false,
+              "showOperation": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "PRIMARYV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "PRIMARY"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "PRIMARYVS",
+                  "_parent": {
+                    "$ref": "PRIMARYV"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 543,
+                  "top": 547,
+                  "width": 118,
+                  "height": 17,
+                  "text": "<<block>>",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "PRIMARYVN",
+                  "_parent": {
+                    "$ref": "PRIMARYV"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 543,
+                  "top": 571,
+                  "width": 118,
+                  "height": 46,
+                  "text": "Primary Medical Care",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "left": 538,
+              "top": 540,
+              "width": 128,
+              "height": 81,
+              "fillColor": "#ff7777",
+              "lineColor": "#5365ff",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "PRIMARYVN"
+              },
+              "stereotypeLabel": {
+                "$ref": "PRIMARYVS"
+              },
+              "showStereotype": true,
+              "showProperty": false,
+              "showOperation": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "COMMUNITYV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "COMMUNITY"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "COMMUNITYVS",
+                  "_parent": {
+                    "$ref": "COMMUNITYV"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 781,
+                  "top": 547,
+                  "width": 118,
+                  "height": 17,
+                  "text": "<<block>>",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "COMMUNITYVN",
+                  "_parent": {
+                    "$ref": "COMMUNITYV"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 781,
+                  "top": 571,
+                  "width": 118,
+                  "height": 46,
+                  "text": "Community Health Center",
+                  "horizontalAlignment": 0,
+                  "verticalAlignment": 1
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "left": 776,
+              "top": 540,
+              "width": 128,
+              "height": 81,
+              "fillColor": "#ff7777",
+              "lineColor": "#5365ff",
+              "lineWidth": 1,
+              "nameLabel": {
+                "$ref": "COMMUNITYVN"
+              },
+              "stereotypeLabel": {
+                "$ref": "COMMUNITYVS"
+              },
+              "showStereotype": true,
+              "showProperty": false,
+              "showOperation": false
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "A_HOSPV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "A_HOSP"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "HPRV"
+              },
+              "head": {
+                "$ref": "HOSPV"
+              },
+              "points": "235:358;235:219;337:219"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "A_CRITV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "A_CRIT"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "HPRV"
+              },
+              "head": {
+                "$ref": "CRITICALV"
+              },
+              "points": "294:576;294:246;337:246"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "A_RURALV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "A_RURAL"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "HPRV"
+              },
+              "head": {
+                "$ref": "RURALV"
+              },
+              "points": "400:259;400:318"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "A_DENTV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "A_DENT"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "HPRV"
+              },
+              "head": {
+                "$ref": "DENTISTSV"
+              },
+              "points": "475:259;475:500;392:500;392:540"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "A_PRIMARYV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "A_PRIMARY"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "HPRV"
+              },
+              "head": {
+                "$ref": "PRIMARYV"
+              },
+              "points": "495:259;495:576;538:576"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "A_LOCALV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "A_LOCAL"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "HPRV"
+              },
+              "head": {
+                "$ref": "LOCALV"
+              },
+              "points": "571:259;571:318"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "A_COMMV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "A_COMM"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "HPRV"
+              },
+              "head": {
+                "$ref": "COMMUNITYV"
+              },
+              "points": "612:230;739:230;739:575;776:575"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "A_EMSV",
+              "_parent": {
+                "$ref": "D1"
+              },
+              "model": {
+                "$ref": "A_EMS"
+              },
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "tail": {
+                "$ref": "HPRV"
+              },
+              "head": {
+                "$ref": "EMSV"
+              },
+              "points": "600:206;824:206;824:305"
+            }
+          ]
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "A_HOSP",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_HOSPE1",
+            "_parent": {
+              "$ref": "A_HOSP"
+            },
+            "reference": {
+              "$ref": "HPR"
+            },
+            "aggregation": "shared"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_HOSPE2",
+            "_parent": {
+              "$ref": "A_HOSP"
+            },
+            "reference": {
+              "$ref": "HOSP"
+            },
+            "aggregation": "none"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "A_CRIT",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_CRITE1",
+            "_parent": {
+              "$ref": "A_CRIT"
+            },
+            "reference": {
+              "$ref": "HPR"
+            },
+            "aggregation": "shared"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_CRITE2",
+            "_parent": {
+              "$ref": "A_CRIT"
+            },
+            "reference": {
+              "$ref": "CRITICAL"
+            },
+            "aggregation": "none"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "A_RURAL",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_RURALE1",
+            "_parent": {
+              "$ref": "A_RURAL"
+            },
+            "reference": {
+              "$ref": "HPR"
+            },
+            "aggregation": "composite"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_RURALE2",
+            "_parent": {
+              "$ref": "A_RURAL"
+            },
+            "reference": {
+              "$ref": "RURAL"
+            },
+            "aggregation": "none"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "A_DENT",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_DENTE1",
+            "_parent": {
+              "$ref": "A_DENT"
+            },
+            "reference": {
+              "$ref": "HPR"
+            },
+            "aggregation": "shared"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_DENTE2",
+            "_parent": {
+              "$ref": "A_DENT"
+            },
+            "reference": {
+              "$ref": "DENTISTS"
+            },
+            "aggregation": "none"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "A_PRIMARY",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_PRIMARYE1",
+            "_parent": {
+              "$ref": "A_PRIMARY"
+            },
+            "reference": {
+              "$ref": "HPR"
+            },
+            "aggregation": "shared"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_PRIMARYE2",
+            "_parent": {
+              "$ref": "A_PRIMARY"
+            },
+            "reference": {
+              "$ref": "PRIMARY"
+            },
+            "aggregation": "none"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "A_LOCAL",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_LOCALE1",
+            "_parent": {
+              "$ref": "A_LOCAL"
+            },
+            "reference": {
+              "$ref": "HPR"
+            },
+            "aggregation": "composite"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_LOCALE2",
+            "_parent": {
+              "$ref": "A_LOCAL"
+            },
+            "reference": {
+              "$ref": "LOCAL"
+            },
+            "aggregation": "none"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "A_COMM",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_COMME1",
+            "_parent": {
+              "$ref": "A_COMM"
+            },
+            "reference": {
+              "$ref": "HPR"
+            },
+            "aggregation": "shared"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_COMME2",
+            "_parent": {
+              "$ref": "A_COMM"
+            },
+            "reference": {
+              "$ref": "COMMUNITY"
+            },
+            "aggregation": "none"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "A_EMS",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_EMSE1",
+            "_parent": {
+              "$ref": "A_EMS"
+            },
+            "reference": {
+              "$ref": "HPR"
+            },
+            "aggregation": "shared"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "A_EMSE2",
+            "_parent": {
+              "$ref": "A_EMS"
+            },
+            "reference": {
+              "$ref": "EMS"
+            },
+            "aggregation": "none"
+          }
+        }
+      ]
+    }
+  ]
+}

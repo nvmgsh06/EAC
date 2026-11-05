@@ -1,0 +1,778 @@
+{
+  "_type": "Project",
+  "_id": "P1",
+  "name": "Hospital Registration Process",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "M1",
+      "_parent": {
+        "$ref": "P1"
+      },
+      "name": "Hospital Registration",
+      "ownedElements": [
+        {
+          "_type": "UMLActivity",
+          "_id": "ACT1",
+          "_parent": {
+            "$ref": "M1"
+          },
+          "name": "Registration Process at Hospital",
+          "ownedElements": [
+            {
+              "_type": "UMLActivityPartition",
+              "_id": "PART1",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Patient",
+              "nodes": [
+                {
+                  "$ref": "N0"
+                },
+                {
+                  "$ref": "A1"
+                },
+                {
+                  "$ref": "A2"
+                }
+              ]
+            },
+            {
+              "_type": "UMLActivityPartition",
+              "_id": "PART2",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Receptionist",
+              "nodes": [
+                {
+                  "$ref": "A3"
+                },
+                {
+                  "$ref": "A4"
+                },
+                {
+                  "$ref": "A5"
+                },
+                {
+                  "$ref": "NF"
+                }
+              ]
+            },
+            {
+              "_type": "UMLInitialNode",
+              "_id": "N0",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": ""
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "A1",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Visits Receptionist"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "A2",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "provides personal details"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "A3",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Enters details into system"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "A4",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Generates Patient ID"
+            },
+            {
+              "_type": "UMLAction",
+              "_id": "A5",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Pay fees"
+            },
+            {
+              "_type": "UMLAcitivityFinalNode",
+              "_id": "NF",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": ""
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "F1",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "N0"
+              },
+              "target": {
+                "$ref": "A1"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "F2",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "A1"
+              },
+              "target": {
+                "$ref": "A2"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "F3",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "A3"
+              },
+              "target": {
+                "$ref": "A4"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "F4",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "A4"
+              },
+              "target": {
+                "$ref": "A5"
+              }
+            },
+            {
+              "_type": "UMLControlFlow",
+              "_id": "F5",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "",
+              "source": {
+                "$ref": "A5"
+              },
+              "target": {
+                "$ref": "NF"
+              }
+            },
+            {
+              "_type": "UMLActivityDiagram",
+              "_id": "D1",
+              "_parent": {
+                "$ref": "ACT1"
+              },
+              "name": "Activity Diagram for Registration Process at Hospital",
+              "ownedViews": [
+                {
+                  "_type": "UMLNoteView",
+                  "_id": "TITLEV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "TITLEL",
+                      "_parent": {
+                        "$ref": "TITLEV"
+                      },
+                      "font": "Arial;18;1",
+                      "parentStyle": false,
+                      "left": 26,
+                      "top": 34,
+                      "width": 600,
+                      "height": 28,
+                      "text": "Activity Diagram for Registration Process at Hospital",
+                      "horizontalAlignment": 0,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;18;1",
+                  "parentStyle": false,
+                  "left": 26,
+                  "top": 27,
+                  "width": 600,
+                  "height": 35,
+                  "fillColor": "#ffffff",
+                  "lineColor": "#ffffff",
+                  "nameLabel": {
+                    "$ref": "TITLEL"
+                  }
+                },
+                {
+                  "_type": "UMLSwimlaneView",
+                  "_id": "SV1",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "PART1"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "SV1L",
+                      "_parent": {
+                        "$ref": "SV1"
+                      },
+                      "font": "Arial;16;1",
+                      "parentStyle": false,
+                      "left": 108,
+                      "top": 89,
+                      "width": 236,
+                      "height": 40,
+                      "text": "Patient",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;16;1",
+                  "parentStyle": false,
+                  "left": 104,
+                  "top": 73,
+                  "width": 244,
+                  "height": 708,
+                  "isVertical": true,
+                  "nameLabel": {
+                    "$ref": "SV1L"
+                  },
+                  "fillColor": "#ffffff",
+                  "lineColor": "#10194b",
+                  "lineWidth": 2
+                },
+                {
+                  "_type": "UMLSwimlaneView",
+                  "_id": "SV2",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "PART2"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "SV2L",
+                      "_parent": {
+                        "$ref": "SV2"
+                      },
+                      "font": "Arial;16;1",
+                      "parentStyle": false,
+                      "left": 352,
+                      "top": 89,
+                      "width": 234,
+                      "height": 40,
+                      "text": "Receptionist",
+                      "horizontalAlignment": 1,
+                      "verticalAlignment": 1
+                    }
+                  ],
+                  "font": "Arial;16;1",
+                  "parentStyle": false,
+                  "left": 348,
+                  "top": 73,
+                  "width": 242,
+                  "height": 708,
+                  "isVertical": true,
+                  "nameLabel": {
+                    "$ref": "SV2L"
+                  },
+                  "fillColor": "#ffffff",
+                  "lineColor": "#10194b",
+                  "lineWidth": 2
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "A1V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "A1"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLNameCompartmentView",
+                      "_id": "A1VN",
+                      "_parent": {
+                        "$ref": "A1V"
+                      },
+                      "model": {
+                        "$ref": "A1"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "LabelView",
+                          "_id": "A1VL",
+                          "_parent": {
+                            "$ref": "A1VN"
+                          },
+                          "font": "Arial;16;1",
+                          "parentStyle": false,
+                          "left": 158,
+                          "top": 251,
+                          "width": 128,
+                          "height": 55,
+                          "text": "Visits\nReceptionist",
+                          "horizontalAlignment": 1,
+                          "verticalAlignment": 1
+                        }
+                      ],
+                      "font": "Arial;16;1",
+                      "parentStyle": true,
+                      "left": 151,
+                      "top": 243,
+                      "width": 142,
+                      "height": 71,
+                      "nameLabel": {
+                        "$ref": "A1VL"
+                      }
+                    }
+                  ],
+                  "font": "Arial;16;1",
+                  "parentStyle": false,
+                  "left": 151,
+                  "top": 243,
+                  "width": 142,
+                  "height": 71,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "A1VL"
+                  },
+                  "roundCorner": 16,
+                  "nameCompartment": {
+                    "$ref": "A1VN"
+                  }
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "A2V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "A2"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLNameCompartmentView",
+                      "_id": "A2VN",
+                      "_parent": {
+                        "$ref": "A2V"
+                      },
+                      "model": {
+                        "$ref": "A2"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "LabelView",
+                          "_id": "A2VL",
+                          "_parent": {
+                            "$ref": "A2VN"
+                          },
+                          "font": "Arial;16;1",
+                          "parentStyle": false,
+                          "left": 158,
+                          "top": 362,
+                          "width": 128,
+                          "height": 55,
+                          "text": "provides\npersonal details",
+                          "horizontalAlignment": 1,
+                          "verticalAlignment": 1
+                        }
+                      ],
+                      "font": "Arial;16;1",
+                      "parentStyle": true,
+                      "left": 151,
+                      "top": 354,
+                      "width": 142,
+                      "height": 71,
+                      "nameLabel": {
+                        "$ref": "A2VL"
+                      }
+                    }
+                  ],
+                  "font": "Arial;16;1",
+                  "parentStyle": false,
+                  "left": 151,
+                  "top": 354,
+                  "width": 142,
+                  "height": 71,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "A2VL"
+                  },
+                  "roundCorner": 16,
+                  "nameCompartment": {
+                    "$ref": "A2VN"
+                  }
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "A3V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "A3"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLNameCompartmentView",
+                      "_id": "A3VN",
+                      "_parent": {
+                        "$ref": "A3V"
+                      },
+                      "model": {
+                        "$ref": "A3"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "LabelView",
+                          "_id": "A3VL",
+                          "_parent": {
+                            "$ref": "A3VN"
+                          },
+                          "font": "Arial;16;1",
+                          "parentStyle": false,
+                          "left": 404,
+                          "top": 363,
+                          "width": 125,
+                          "height": 54,
+                          "text": "Enters details\ninto system",
+                          "horizontalAlignment": 1,
+                          "verticalAlignment": 1
+                        }
+                      ],
+                      "font": "Arial;16;1",
+                      "parentStyle": true,
+                      "left": 397,
+                      "top": 355,
+                      "width": 139,
+                      "height": 70,
+                      "nameLabel": {
+                        "$ref": "A3VL"
+                      }
+                    }
+                  ],
+                  "font": "Arial;16;1",
+                  "parentStyle": false,
+                  "left": 397,
+                  "top": 355,
+                  "width": 139,
+                  "height": 70,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "A3VL"
+                  },
+                  "roundCorner": 16,
+                  "nameCompartment": {
+                    "$ref": "A3VN"
+                  }
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "A4V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "A4"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLNameCompartmentView",
+                      "_id": "A4VN",
+                      "_parent": {
+                        "$ref": "A4V"
+                      },
+                      "model": {
+                        "$ref": "A4"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "LabelView",
+                          "_id": "A4VL",
+                          "_parent": {
+                            "$ref": "A4VN"
+                          },
+                          "font": "Arial;16;1",
+                          "parentStyle": false,
+                          "left": 404,
+                          "top": 477,
+                          "width": 125,
+                          "height": 53,
+                          "text": "Generates\nPatient ID",
+                          "horizontalAlignment": 1,
+                          "verticalAlignment": 1
+                        }
+                      ],
+                      "font": "Arial;16;1",
+                      "parentStyle": true,
+                      "left": 397,
+                      "top": 469,
+                      "width": 139,
+                      "height": 69,
+                      "nameLabel": {
+                        "$ref": "A4VL"
+                      }
+                    }
+                  ],
+                  "font": "Arial;16;1",
+                  "parentStyle": false,
+                  "left": 397,
+                  "top": 469,
+                  "width": 139,
+                  "height": 69,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "A4VL"
+                  },
+                  "roundCorner": 16,
+                  "nameCompartment": {
+                    "$ref": "A4VN"
+                  }
+                },
+                {
+                  "_type": "UMLActionView",
+                  "_id": "A5V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "A5"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLNameCompartmentView",
+                      "_id": "A5VN",
+                      "_parent": {
+                        "$ref": "A5V"
+                      },
+                      "model": {
+                        "$ref": "A5"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "LabelView",
+                          "_id": "A5VL",
+                          "_parent": {
+                            "$ref": "A5VN"
+                          },
+                          "font": "Arial;16;1",
+                          "parentStyle": false,
+                          "left": 404,
+                          "top": 591,
+                          "width": 125,
+                          "height": 53,
+                          "text": "Pay fees",
+                          "horizontalAlignment": 1,
+                          "verticalAlignment": 1
+                        }
+                      ],
+                      "font": "Arial;16;1",
+                      "parentStyle": true,
+                      "left": 397,
+                      "top": 583,
+                      "width": 139,
+                      "height": 69,
+                      "nameLabel": {
+                        "$ref": "A5VL"
+                      }
+                    }
+                  ],
+                  "font": "Arial;16;1",
+                  "parentStyle": false,
+                  "left": 397,
+                  "top": 583,
+                  "width": 139,
+                  "height": 69,
+                  "fillColor": "#ff7777",
+                  "lineColor": "#10194b",
+                  "lineWidth": 1,
+                  "nameLabel": {
+                    "$ref": "A5VL"
+                  },
+                  "roundCorner": 16,
+                  "nameCompartment": {
+                    "$ref": "A5VN"
+                  }
+                },
+                {
+                  "_type": "UMLControlNodeView",
+                  "_id": "N0V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "N0"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 204,
+                  "top": 153,
+                  "width": 36,
+                  "height": 36,
+                  "fillColor": "#000000",
+                  "lineColor": "#000000"
+                },
+                {
+                  "_type": "UMLControlNodeView",
+                  "_id": "NFV",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "NF"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "left": 449,
+                  "top": 696,
+                  "width": 36,
+                  "height": 36,
+                  "fillColor": "#ffffff",
+                  "lineColor": "#10194b"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "F1V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "F1"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "N0V"
+                  },
+                  "head": {
+                    "$ref": "A1V"
+                  },
+                  "points": "222:189;222:243"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "F2V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "F2"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "A1V"
+                  },
+                  "head": {
+                    "$ref": "A2V"
+                  },
+                  "points": "222:314;222:354"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "F3V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "F3"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "A3V"
+                  },
+                  "head": {
+                    "$ref": "A4V"
+                  },
+                  "points": "466:425;466:469"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "F4V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "F4"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "A4V"
+                  },
+                  "head": {
+                    "$ref": "A5V"
+                  },
+                  "points": "466:538;466:583"
+                },
+                {
+                  "_type": "UMLControlFlowView",
+                  "_id": "F5V",
+                  "_parent": {
+                    "$ref": "D1"
+                  },
+                  "model": {
+                    "$ref": "F5"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": false,
+                  "tail": {
+                    "$ref": "A5V"
+                  },
+                  "head": {
+                    "$ref": "NFV"
+                  },
+                  "points": "466:652;466:696"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
